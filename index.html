@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="port.css">
+    <script src="port.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cade Muntz</h1>
+        <p>Email: cademuntzjobs@gmail.com</p>
+        <li><a href="https://www.linkedin.com/in/cade-muntz-2040b51b9/">
+            <img src="Link.jpg" alt="Clickable Image">
+        </a><a href="https://github.com/simplybaws">
+            <img src="GitHub-Logo.jpg" alt="Clickable Image">
+        </a></li>
+
+        <nav>
+            <div class="menu-icon">Menu</div>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#college-courses">College Courses</a></li>
+                <li><a href="#Resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        /* Add spacing between project files */
+        .project-files {
+            margin: 0 10px; 
+        }
+        
+        .project h3 {
+                color: #007bff; /* Change to your desired light blue color */
+        }
+        
+        .project {
+            width: calc(25% - 10px); 
+            margin-right: 20px;
+            margin-bottom: 20px;
+            float: left;
+            box-sizing: content-box; 
+            
+        }
+        
+
+        /* Clear the float to prevent layout issues */
+        #projects::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>NBA Fantasy Points Predictor</h3>
+            <p>Uses an MLP neural network to attempt to predict NBA Fantasy Points.</p>
+            <div class="project-files">
+                <h4>Project Files : </h4>
+                <a href="nbapreprocess.py">Preprocessing Program  </a><br>
+                <a href="nbamodels.py"> Linear Regression Program </a><br>
+                <a href="neuralnetwork.py"> Neural Network Program</a><br>
+                <a href="predictor.py"> Prediction Program</a><br>
+                <a href="2017-2018.csv"> Dataset1</a><br>
+                <a href="2018-2019.csv"> Dataset2</a><br>
+                <a href="2019-2020.csv"> Dataset3</a><br>
+                <a href="2020-2021.csv"> Dataset4</a><br>
+                <a href="2021-2022.csv"> Dataset5</a><br>
+                <a href="2023-2023.csv"> Dataset6</a>
+            </div>    
+        </div>
+
+        <div class="project">
+            <h3>Data Management / IS Redesign</h3>
+            <p>Created a project for the use of Oregon State University which takes in syallbi and renames them to a specific naming format. This Program is in current use by OSU and saves a lot of manual labor by automatically renaming 300+ syllabi files. Test data not provided as it would be property of OSU.</p>
+            <div class="project-files">
+                <h4>Project Files :</h4>
+                <a href="AutoRenamer.py">Auto Renamer Program</a><br>
+                <a href="delivery 2 - Cade Muntz.docx">Report - Relational DB and Program</a><br>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Marketing Analytics Multiple Regression</h3>
+            <p>This was a class project where we ran an ANOVA test and a multiple regression to find business insights for a car rental agency. In class this was done using RapidMiner but it has been repurposed in Python.</p>
+            <div class="project-files">
+                <h4>Project Files : </h4>
+                <a href="anova.py">ANOVA & Visualization Program</a><br>
+                <a href="regression.py">Regression Program</a><br>
+                <a href="MR.docx">Marketing Analytics Report</a><br>
+                <a href="MRdata.csv">Dataset</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Marketing Analytics Logistic Regression</h3>
+            <p>This was a class project where we ran multiple logistic regressions on both split data and untested validation data for a book store. In class this was done using RapidMiner but it has been repurposed in Python.</p>
+            <div class="project-files">
+                <h4>Project Files :</h4>
+                <a href="LVisual.py">Visualization Program</a><br>
+                <a href="Logmodel.py">Logistic Regression Program</a><br>
+                <a href="Logi.docx">Marketing Analytics Report</a><br>
+                <a href="Log.csv">Training Dataset</a><br>
+                <a href="Pred.csv">Testing Dataset</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Marketing Cluster Analysis and Logistic Regression</h3>
+            <p>This was a class project where we ran a cluster analysis against a shoe companies data to understand their shoppers better. Upon running the cluster analysis, we found 2 clusters were the best, therefore we also performmed a logistic regression to predict who may fall into either cluster (0/1). This was originally done in class using RapidMiner and repurposed using Python.</p>
+            <div class="project-files">
+                <h4>Project Files :</h4>
+                <a href="cluster.py">Cluster Analysis and Logistic Regression Program</a><br>
+                <a href="Clust.docx">Marketing Analytics Report</a><br>
+                <a href="Clust.csv">Dataset</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Marketing Analytics Linear Discriminant Analysis</h3>
+            <p>This was a class project where we performed a Linear Discriminant Analysis using SAS on local bars around Corvallis Oregon.</p>
+            <h4>Project Files :</h4>
+            <div class="project-files">
+                <a href="Corvallis Bars(new)-1.ctl">SAS Program File </a><br>
+                <a href="Linear Discriminant Analysis Assignment (2).docx">Marketing Analytics Report</a><br>
+                <a href="Corvallis Bars(new)-1.xlsx">Dataset</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Marketing Analytics Conjoint Analysis</h3>
+            <p>This was a class project where we ran a Conjoint Analysis against a hotel companies data to understand a customers ideal room to make financial decisions when implementing new features. This project was done using SAS, however I lost the SAS program file and dataset, therefore this is just the report.</p>
+            <h4>Project Files :</h4>
+            <div class="project-files">
+                <a href="MRKT 477 - Conjoint Analysis Assignment - Cade Muntz (1).docx">Marketing Analytics Report</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Project 2 Title</h3>
+            <p>Short description of Project 2.</p>
+            <div class="project-files">
+                <a href="project2_report.docx">Project 2 Word Report</a>
+                <a href="project2_dataset.csv">Project 2 Dataset</a>
+            </div>
+        </div>
+
+
+        
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="Certifications-list">
+            <li>Python - Pandas, NumPy, SciPy, Seaborn, Matplotlib, etc. </li>
+            <li>R Studio, SAS, Excel </li>
+            <li>SQL</li>
+            <li>Tableu </li>
+            <li>Microsoft Office, Visio </li>
+            
+            
+        </ul>
+    </section>
+
+    <style>
+        /* Apply margin to subheaders */
+        h3 {
+            margin-top: 20px; 
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <section id="College-Courses">
+        <h2>College Courses</h2>
+        <ul class="College-Courses-list">
+            
+            <h3>Business Analytics Courses:  </h3>
+            <li>ba 481 - Introduction to Business Analytics :  How organizations can successfully collect, evaluate and apply information for better decision making. Emerging technologies such as transaction processing systems, RFID, weblogs, social networks, website usage, and online communities have the potential to reveal market trends, suppliers' preferences, and competitors' next moves. The success of an organization largely depends on its ability to take advantage of those data sets that are already available to it. Starts with basic IT strategy concepts for the identification of the opportunities for BI solutions, and ends with hands-on experience using Business Intelligence tools to implement such solutions. </li>
+            <li>BA 375 - Applied Quantitative Methods : Introduces students to the basics of data science and data analytics for handling of large-scale databases. Provides an overview of the main data-analytic techniques and topics including data visualization, linear and nonlinear regression analysis, time series analysis and forecasting, classification, and clustering methods. </li>
+            <li>BA 474 - Data Management : Familiarize students with the major activities involved in collecting and managing data for a data analytics project, including extracting information from relational databases, mapping organizational requirements into a data design, transforming data into information, and exploring basic concepts underlying noSQL data management and analysis methods. </li>
+            <li>BA 475 - Data Exploration and Visualization : Explores and visualizes data in business analytics projects. Focuses on exploring and wrangling data to discover interesting analysis questions and prepare for other analytics activities. Pays special attention to data visualization methods and their overall place in data science and business analytics. </li>
+            <li>BA 476 - Data and Text Mining : Examines how data/text analysis technologies can be used to improve decision making. Covers the fundamental principles and techniques of data mining, text analysis, and uses real-world examples and cases to place data-mining techniques in context. Provides hands-on experience with data/text mining software. </li>
+            <li>MRKT 477 - Integrated Marketing Analytics Project : Integrate what you have learned to solve industry-sponsored problems. Provides opportunities to design, implement, and evaluate analytic solutions for a real-world enterprise. Student teams will examine the data requirements, technical requirements, and organizational requirements necessary for the success of analytical solutions. Provides real-world case studies that examine the role of analytics in an organization. Special emphasis will be given to the implementation and leadership of the analytical function in an enterprise. </li>
+           
+            <h3>Business Information Systems Courses:  </h3>
+            <li>BA 370 - Business Information Systems Overview : Introduce students to the field of information management. Topics include information systems technology, the strategic role of IT, the business applications of networks, databases and Internet technologies, and the development and implementation of information systems. Use relational database models to design a real-world case study. </li>
+            <li>BA 371 - Business Data Management : Exploration of business data management technologies including but not limited to relational database modeling, data retrieval, database triggers and stored procedures, NoSQL databases, programmatic database querying. </li>
+            <li>BA 372 - Business Information System Design and Development : Explores how information systems are developed, deployed, and adapted considering architectures, value propositions, infrastructure, and organizational factors. Explores both classic and agile application design and development approaches and tasks, tools and methods of system developers and automation tool users. </li>
+            <li>BA 479 - Business Telecommunications and Networking : Provide a fundamental understanding of the five-layer Internet model and its effects on the business environment and enterprise-wide computing. Assignments relate to network administration in a virtualized cloud environment. </li>
+            <li>Information Systems Security : Covers security risk mitigation methods and procedures such as access control, identity management, intrusion prevention and detection, network and physical security, etc. These and other topics will be placed in both the operational and strategic context of the business. Addresses several IS governance and IS security frameworks within which the various security concepts, aspects, policies and procedures can be viewed and discussed.</li>
+            <li>MGMT 364 - Project Management : Covers the tools available to project managers, the human and organizational dimensions in different project environments, some computer applications, cases, and a project. </li>
+
+            <h3>Market Research and Consumer Behavior Courses:   </h3>
+            <li>MRKT 396 - Fundamentals of Marketing Research : Introduction to the fundamentals of market research. Provides a basic understanding of marketing research and relevant decisions in the process. </li>
+            <li>MRKT 486 - Customer Relationship Management (CRM) : An integration of people, process and technology. Emphasizes how individuals and companies can gain the return on investment that they expect through technology implementation, service and business process mapping, employee training, customer relationship, customer life time value, technology solutions that track customer data and employee performance. </li>
+            <li>MRKT 491 - Qualitative Research Methods : Gain an overall understanding of qualitative research and methods such as focus groups, in-depth interviews, and observational research. Explore qualitative research methods through hands-on learning and experiences. </li>
+            <li>MRKT 492 - Consumer Behavior : Understanding the processes that lead to purchase, so as to improve decisions on segmentation and the appropriate marketing mix for each segment. How consumers and households make decisions, and why different individuals/groups make different decisions. Application of behavioral science concepts at individual, subcultural and cultural levels. Effects of consumerism and regulation also are considered.</li>
+            <li>MRKT 496 Marketing Research Practicum : Provides the student with practical experience in the collection, analysis and interpretation of primary data.</li>
+
+
+           
+        </ul>
+    </section>
+
+
+    <section id="Certifications">
+        <h2>Certifications</h2>
+        <ul class="Certifications-list">
+            <li>Google Analytics </li>
+            <li>Hootsuite </li>
+            
+        </ul>
+    </section>
+
+    <section id="Resume">
+        <h2>Resume Unfinished</h2>
+        <ul class="Resume-list">
+            
+            
+        </ul>
+    </section>
+
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
