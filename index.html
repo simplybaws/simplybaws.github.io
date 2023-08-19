@@ -29,26 +29,37 @@
         </nav>
     </header>
 
-    <style>
+        <style>
         /* Add spacing between project files */
         .project-files {
             margin: 0 10px; 
         }
         
         .project h3 {
-                color: #007bff; /* Change to your desired light blue color */
+                color: #007bff; 
         }
         
+        
+        #projects {
+            padding: 2em;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
         .project {
-            width: calc(25% - 10px); 
+            min-width: calc(25% - 10px);
+            max-width: 25%;
             margin-right: 20px;
             margin-bottom: 20px;
             float: left;
-            box-sizing: content-box; 
-            
+            box-sizing: content-box;
         }
-        
+            
+        .projtitle {
+            margin-top: 20px
 
+        }
         /* Clear the float to prevent layout issues */
         #projects::after {
             content: "";
@@ -57,8 +68,13 @@
         }
     </style>
 
-    <section id="projects">
+    <section id="projtitle">
         <h2>Projects</h2>
+    
+    </section>
+
+    <section id="projects">
+        
         <div class="project">
             <h3>NBA Fantasy Points Predictor</h3>
             <p>Uses an MLP neural network to attempt to predict NBA Fantasy Points.</p>
