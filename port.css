@@ -151,11 +151,3 @@ nav a[href="#projects"] {
     color: #c2dbc0; 
 }
 
-/* Hover effect for these links */
-nav a[href="#college-courses"]:hover,
-nav a[href="#skills"]:hover,
-nav a[href="#Resume"]:hover,
-nav a[href="#projects"] {
-    text-decoration: underline;
-
-}
