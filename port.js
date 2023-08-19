@@ -36,3 +36,12 @@ navLinks.forEach(link => {
         mobileNav.classList.remove('show'); // Hide mobile navigation after clicking
     });
 });
+
+// JavaScript code for the flip effect
+const courseCards = document.querySelectorAll('.course-card');
+
+courseCards.forEach(courseCard => {
+    courseCard.addEventListener('click', () => {
+        courseCard.classList.toggle('flipped');
+    });
+});
