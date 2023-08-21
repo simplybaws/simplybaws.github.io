@@ -144,61 +144,40 @@ nav a:hover {
 
 
 
-nav a[href="#college-courses"],
+nav a[href="#College-Courses"],
 nav a[href="#skills"],
 nav a[href="#Resume"],
-nav a[href="#projects"] {
+nav a[href="#projects"],
+nav a[href="#About"] {
     color: #c2dbc0; 
 }
 
 /* Course card container */
-.slideshow-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Course card style */
-.course-card {
-    perspective: 1000px;
-    width: calc(33.33% - 20px);
-    margin-right: 20px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-/* Front and back styles */
-.course-front,
-.course-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: transform 0.5s;
-    backface-visibility: hidden;
+.slideshow {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Front and back specific styles */
-.course-front {
+.course-card {
+    width: 300px;
+    height: 200px;
     background-color: #f5f5f5;
-    color: #333;
-    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: none; /* Initially hide all course cards */
 }
 
-.course-back {
-    background-color: #007bff;
-    color: white;
-    transform: rotateY(180deg);
+.course-header {
+    font-weight: bold;
 }
 
-/* Hover effect */
-.course-card:hover .course-front {
-    transform: rotateY(180deg);
+#prevBtn,
+#nextBtn {
+    margin-top: 10px;
 }
 
-.course-card:hover .course-back {
-    transform: rotateY(0deg);
-}
